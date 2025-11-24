@@ -1,11 +1,25 @@
-<div align="center">
+# Corplink Client
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+## 常见问题 (Troubleshooting)
 
-  <h1>Built with AI Studio</h2>
+**Error: `ENOSPC: no space left on device`**
+如果遇到此错误，说明您的磁盘空间不足。Electron 打包需要较大的磁盘空间（建议预留 2GB 以上）。请清理磁盘后重试。
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 开发与构建 (Development & Build)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+1. **安装依赖 (Install Dependencies)**
+   ```bash
+   npm install
+   ```
 
-</div>
+2. **本地开发 (Development)**
+   启动 React 页面和 Electron 窗口：
+   ```bash
+   npm run electron:dev
+   ```
+
+3. **打包 Windows 应用 (Build for Windows)**
+   生成 .exe 安装包（输出目录在 `release/`）：
+   ```bash
+   npm run build:win
+   ```

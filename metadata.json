@@ -1,0 +1,5 @@
+{
+  "name": "FeiLian Client Clone",
+  "description": "A high-fidelity React clone of the FeiLian corporate VPN and device management client for Windows.",
+  "requestFramePermissions": []
+}
